@@ -1,0 +1,101 @@
+{
+    "common": {
+        "name": "shutter-the-sun",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Shutter the sun",
+        "titleLang": {
+            "en": "Shutter the sun",
+            "de": "Blende die Sonne aus",
+            "ru": "Закрой солнце",
+            "pt": "Feche o sol",
+            "nl": "Sluit de zon",
+            "fr": "Cache le soleil",
+            "it": "Chiudi il sole",
+            "es": "cerrar el sol",
+            "pl": "Zasłoń słońce",
+            "zh-cn": "挡住太阳"
+        },
+        "desc": {
+            "en": "Close shutters based on the position of the sun",
+            "de": "Jalousien nach Sonnenstand schließen",
+            "ru": "Закрывайте ставни в зависимости от положения солнца",
+            "pt": "Feche as persianas com base na posição do sol",
+            "nl": "Rolluiken sluiten op basis van de stand van de zon",
+            "fr": "Fermer les volets en fonction de la position du soleil",
+            "it": "Chiudere le persiane in base alla posizione del sole",
+            "es": "Cierra las persianas según la posición del sol",
+            "pl": "Zamknij okiennice w zależności od pozycji słońca",
+            "zh-cn": "根据太阳的位置关闭百叶窗"
+        },
+        "authors": [
+            "Holger Wagner <wagner.holger@gmx.de>"
+        ],
+        "keywords": [
+            "Shutter-Control",
+            "Climate",
+            "Sun protection"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "shutter-the-sun.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/holle-0815/ioBroker.shutter-the-sun/main/admin/shutter-the-sun.png",
+        "readme": "https://github.com/holle-0815/ioBroker.shutter-the-sun/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "climate-control",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "eraseOnUpload": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "shutter-the-sun",
+    "title": "Shutter the sun",
+    "description": "Close shutters based on the position of the sun",
+    "keywords": [
+        "Shutter-Control",
+        "Climate",
+        "Sun protection"
+    ],
+    "expert": "yes",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "climate-control",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "connectionIndicator": "yes",
+    "language": "JavaScript",
+    "adminReact": "yes",
+    "tools": [
+        "ESLint",
+        "type checking"
+    ],
+    "releaseScript": "yes",
+    "devServer": "yes",
+    "devServerPort": 8081,
+    "indentation": "Space (4)",
+    "quotes": "single",
+    "es6class": "yes",
+    "authorName": "Holger Wagner",
+    "authorGithub": "holle-0815",
+    "authorEmail": "wagner.holger@gmx.de",
+    "gitRemoteProtocol": "SSH",
+    "gitCommit": "no",
+    "defaultBranch": "main",
+    "license": "MIT License",
+    "dependabot": "yes",
+    "creatorVersion": "2.1.1"
+}
